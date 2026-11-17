@@ -25,23 +25,37 @@
 #region Question 2
 //Q02.  Using the Book class above, print the result of calling ToString(), Equals() (compare book withitself), GetHashCode(), and GetType() on book.using System;
 
-    class Book
-    {
-        public string Title { get; set; }
-        public int Pages { get; set; }
-    }
+////class Book
+////{
+////    public string Title { get; set; }
+////    public int Pages { get; set; }
+////}
+
+////class Program
+////{
+////    static void Main(string[] args)
+////    {
+////        object book = new Book();
+
+////        Console.WriteLine(book.ToString());
+////        Console.WriteLine(book.Equals(book));
+////        Console.WriteLine(book.GetHashCode());
+////        Console.WriteLine(book.GetType());
+////    }
+////}
+
+#endregion
+#region Question 3
+//Q03.  Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.int pages = "464";
 
     class Program
     {
         static void Main(string[] args)
         {
-            object book = new Book();
-
-            Console.WriteLine(book.ToString());
-            Console.WriteLine(book.Equals(book));
-            Console.WriteLine(book.GetHashCode());
-            Console.WriteLine(book.GetType());
+            int pages = 464;
+            Console.WriteLine(pages);
         }
     }
+
 
 #endregion
