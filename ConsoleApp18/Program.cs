@@ -131,23 +131,38 @@
 #region Question 8
 //Q08.  Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,use int.TryParse() to safely try converting it, and print "Invalid number" if it failsuse int.TryParse() to safely try converting it, and print "Invalid number" if it fails
 
-    class Program
+////class Program
+////{
+////    static void Main(string[] args)
+////    {
+////        string yearText = "2023";
+////        int year = int.Parse(yearText);
+
+////        Console.WriteLine(year);
+
+////        string badText = "abc";
+
+////        bool success = int.TryParse(badText, out int number);
+
+////        if (success == false)
+////        {
+////            Console.WriteLine("Invalid number");
+////        }
+////    }
+////}
+
+#endregion
+#region Question 9
+//Q09.  Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()to prove it's now a string.
+  class Program
     {
         static void Main(string[] args)
         {
-            string yearText = "2023";
-            int year = int.Parse(yearText);
+            int pages = 464;
 
-            Console.WriteLine(year);
+            string pagesString = pages.ToString();
 
-            string badText = "abc";
-
-            bool success = int.TryParse(badText, out int number);
-
-            if (success == false)
-            {
-                Console.WriteLine("Invalid number");
-            }
+            Console.WriteLine(pagesString.GetType());
         }
     }
 
