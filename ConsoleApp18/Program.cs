@@ -116,14 +116,38 @@
 #endregion
 #region Question 7
 //Q07.  Given string pagesText = "464";, convert it into an int using the Convert class.
-   class Program
+////class Program
+//// {
+////     static void Main(string[] args)
+////     {
+////         string pagesText = "464";
+////         int pages = Convert.ToInt32(pagesText);
+
+////         Console.WriteLine(pages);
+////     }
+//// }
+
+#endregion
+#region Question 8
+//Q08.  Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,use int.TryParse() to safely try converting it, and print "Invalid number" if it failsuse int.TryParse() to safely try converting it, and print "Invalid number" if it fails
+
+    class Program
     {
         static void Main(string[] args)
         {
-            string pagesText = "464";
-            int pages = Convert.ToInt32(pagesText);
+            string yearText = "2023";
+            int year = int.Parse(yearText);
 
-            Console.WriteLine(pages);
+            Console.WriteLine(year);
+
+            string badText = "abc";
+
+            bool success = int.TryParse(badText, out int number);
+
+            if (success == false)
+            {
+                Console.WriteLine("Invalid number");
+            }
         }
     }
 
