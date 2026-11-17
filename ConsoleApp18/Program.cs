@@ -87,14 +87,28 @@
 #endregion
 #region Question 5
 //Q05.  Declare an int pages = 300; then store it in a double variable without using a cast.using System;
-  class Program
+////class Program
+////  {
+////      static void Main(string[] args)
+////      {
+////          int pages = 300;
+////          double doublePages = pages;
+
+////          Console.WriteLine(doublePages);
+////      }
+////  }
+
+#endregion
+#region Question 6
+//Q06.  Declare a double price = 29.95; then store it in an int variable using a cast.using System;
+class Program
     {
         static void Main(string[] args)
         {
-            int pages = 300;
-            double doublePages = pages;
+            double price = 49.99;
+            int intPrice = (int)price;
 
-            Console.WriteLine(doublePages);
+            Console.WriteLine(intPrice);
         }
     }
 
