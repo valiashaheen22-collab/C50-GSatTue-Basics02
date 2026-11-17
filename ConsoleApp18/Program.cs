@@ -101,14 +101,29 @@
 #endregion
 #region Question 6
 //Q06.  Declare a double price = 29.95; then store it in an int variable using a cast.using System;
-class Program
+////class Program
+////    {
+////        static void Main(string[] args)
+////        {
+////            double price = 49.99;
+////            int intPrice = (int)price;
+
+////            Console.WriteLine(intPrice);
+////        }
+////    }
+///
+
+#endregion
+#region Question 7
+//Q07.  Given string pagesText = "464";, convert it into an int using the Convert class.
+   class Program
     {
         static void Main(string[] args)
         {
-            double price = 49.99;
-            int intPrice = (int)price;
+            string pagesText = "464";
+            int pages = Convert.ToInt32(pagesText);
 
-            Console.WriteLine(intPrice);
+            Console.WriteLine(pages);
         }
     }
 
