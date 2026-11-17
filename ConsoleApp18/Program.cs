@@ -154,15 +154,33 @@
 #endregion
 #region Question 9
 //Q09.  Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()to prove it's now a string.
-  class Program
+////class Program
+////  {
+////      static void Main(string[] args)
+////      {
+////          int pages = 464;
+
+////          string pagesString = pages.ToString();
+
+////          Console.WriteLine(pagesString.GetType());
+////      }
+////  }
+
+#endregion
+#region Question 10
+//Q10.  Declare int copies = 100;. Box it into an object variable, then unbox it back into a new intvariable, and print both
+class Program
     {
         static void Main(string[] args)
         {
-            int pages = 464;
+            int copies = 100;
 
-            string pagesString = pages.ToString();
+            object boxedCopies = copies;
 
-            Console.WriteLine(pagesString.GetType());
+            int unboxedCopies = (int)boxedCopies;
+
+            Console.WriteLine(boxedCopies);
+            Console.WriteLine(unboxedCopies);
         }
     }
 
