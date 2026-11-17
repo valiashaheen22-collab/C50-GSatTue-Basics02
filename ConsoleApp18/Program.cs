@@ -170,18 +170,18 @@
 #region Question 10
 //Q10.  Declare int copies = 100;. Box it into an object variable, then unbox it back into a new intvariable, and print both
 class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            int copies = 100;
+        int copies = 100;
 
-            object boxedCopies = copies;
+        object boxedCopies = copies;
 
-            int unboxedCopies = (int)boxedCopies;
+        int unboxedCopies = (int)boxedCopies;
 
-            Console.WriteLine(boxedCopies);
-            Console.WriteLine(unboxedCopies);
-        }
+        Console.WriteLine(boxedCopies);
+        Console.WriteLine(unboxedCopies);
     }
-
+}
+ 
 #endregion
